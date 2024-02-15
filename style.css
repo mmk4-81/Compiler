@@ -33,3 +33,12 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #45a049;
 }
+.output-box {
+    margin-top: 20px;
+    height: auto;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
