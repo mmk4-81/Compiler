@@ -1,5 +1,20 @@
 function compileCode() {
-    var inputCode = document.getElementById("input-code").value;
-    var compiledCode = "Compiled code will be here...";
-    document.getElementById("output").innerHTML = compiledCode;
+    var code = document.getElementById("input-code").value;
+    document.getElementById("output").innerText = code;
 }
+
+var codeEditor = document.getElementById("input-code");
+var lineNumbers = document.getElementById("line-numbers");
+
+codeEditor.addEventListener("input", updateLineNumbers);
+
+function updateLineNumbers() {
+    var lines = codeEditor.value.split("\n");
+    var lineNumbersHTML = "";
+    for (var i = 1; i <= lines.length; i++) {
+        lineNumbersHTML += i + "<br>";
+    }
+    lineNumbers.innerHTML = lineNumbersHTML;
+}
+
+updateLineNumbers();
