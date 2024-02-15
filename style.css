@@ -23,6 +23,7 @@ body {
     background-color: #333;
     padding: 10px;
     box-sizing: border-box;
+
 }
 
 #line-numbers span {
@@ -42,6 +43,7 @@ textarea {
     border-radius: 5px;
     border: 1px solid #444;
     box-sizing: border-box;
+    overflow-y: visible;
 }
 
 input[type="submit"] {
@@ -66,3 +68,13 @@ input[type="submit"]:hover {
     overflow-wrap: break-word;
 }
 
+#input-code {
+    overflow-y: visible;
+}
+
+#error{
+    color: #fff;
+    background-color: red;
+    border-radius: 5px;
+    padding: 5px;
+}

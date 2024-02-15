@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Compiler</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <div class="editor-container">
-        <h1>Code Editor</h1>
-        <div class="code-editor" id="code-editor">
-            <div class="line-numbers" id="line-numbers"></div>
-            <textarea id="input-code" placeholder="Enter your code here..."></textarea>
-        </div>
-        <input type="submit" value="Run" onclick="compileCode()">
-        <div class="output-box" id="output"></div>
+      <h1>Code Editor</h1>
+      <div class="code-editor" id="code-editor">
+        <div class="line-numbers" id="line-numbers"></div>
+        <textarea
+          id="input-code"
+          placeholder="Enter your code here..."
+        ></textarea>
+      </div>
+      <input type="submit" value="Run" onclick="compileCode()" />
+      <div class="output-box">
+        <span id="error">error</span>
+        <div id="output"></div>
+      </div>
     </div>
 
     <script src="compiler.js"></script>
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>
