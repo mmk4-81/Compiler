@@ -1,0 +1,89 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #272822;
+  color: #f8f8f2;
+  padding: 20px;
+}
+
+.editor-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.code-editor {
+  position: relative;
+}
+
+.line-numbers {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 5px;
+  width: 40px;
+  background-color: #333;
+  padding: 12px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+#line-numbers span {
+  display: block;
+  color: #888;
+}
+
+textarea {
+  width: calc(100% - 40px);
+  height: 300px;
+  padding-left: 50px;
+  border: none;
+  background-color: #272822;
+  color: #f8f8f2;
+  font-size: 16px;
+  resize: none;
+  border-radius: 5px;
+  border: 1px solid #444;
+  box-sizing: border-box;
+  overflow-y: visible;
+}
+
+input[type="submit"] {
+  background-color: #66d9ef;
+  color: #272822;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: #5ccfe6;
+  color: #fff;
+}
+
+.output-box {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #444;
+  border-radius: 5px;
+  overflow-wrap: break-word;
+}
+
+#input-code {
+  overflow-y: visible;
+}
+
+#error {
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.token {
+  margin-bottom: 5px;
+}
+
+td{
+  text-align: center;
+}

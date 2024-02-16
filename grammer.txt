@@ -1,0 +1,17 @@
+<prog> → program <id> ; var <dec-list> begin <stat-list> end
+<id> → <letter> { <letter> | <digit> }
+<dec-list> → <dec> : <type>
+<dec> → <id> , <dec> | <id>
+<type> → integer
+<stat-list> → <stat> | <stat> <stat-list>
+<stat> → <write> | <assign>
+<write> → show ( <id> ) ;
+<assign> → <id> = <expr> ;
+<expr> → <expr> + <term> | <expr> - <term> | <term>
+<term> → <term> * <factor> | <term> / <factor> | <factor>
+<factor> → <id> | <number> | ( <expr> )
+<number> → <sign> <digit> { <digit> }
+<sign> → + | - | 𝜆
+<digit> → 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
+<letter> → a | b | c | d | e
+ 

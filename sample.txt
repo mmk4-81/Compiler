@@ -1,0 +1,16 @@
+متن درست:
+program abcde;
+var a, b, c: integer;
+begin a = 5 + 3;
+show(a); end
+
+program abcde; var x : integer begin show(x); end
+
+program abcde; var x, y : integer begin x = 5; y = (x + 3) * 2; show(y); end
+
+متن اشتباه:
+program abcde; var x : integer begin show(y); end
+این اشتباه است زیرا y تعریف نشده است.
+
+program abcde; var x : integer begin x = 5; show(x); end;
+این اشتباه است زیرا نیاز به علامت ";" در انتهای تابع show(x) داریم.

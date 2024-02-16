@@ -1,20 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Compiler</title>
-</head>
-<body>
-    
-    <div class="compiler-container">
-        <h1>Compiler</h1>
-        <textarea id="input-code" placeholder="Enter your code here..."></textarea><br>
-        <input type="submit" value="Run" onclick="compileCode()">
-        <div class="output-box" id="output"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Code edittor</title>
+  </head>
+  <body>
+    <div class="editor-container">
+      <h1>Code Editor</h1>
+      <div class="code-editor" id="code-editor">
+        <div class="line-numbers" id="line-numbers"></div>
+        <textarea
+          id="input-code"
+          placeholder="Enter your code here..."
+        >program d;
+var b: integer;
+begin
+b = 1 + 2;
+show(b);
+end</textarea>
+      </div>
+      <input type="submit" id="submit" value="Run" />
+      <div class="output-box">
+        <div id="output"></div>
+        <div id="error" ></div>
+        <div id="output-parser"></div>
+        <div id="error-parser" ></div>
+      </div>
     </div>
-
-    <script src="compiler.js"></script>
-</body>
+    <!-- <script type="module" src="/src/lexer.ts"></script>  -->
+    <script type="module" src="/src/parser.ts"></script>
+  </body>
 </html>
