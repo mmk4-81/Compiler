@@ -32,3 +32,11 @@ begin
   b = 1 + 2;
   show(b);
 end
+
+
+⚠️ Note: This language is not general-purpose; its syntax is designed specifically for this project.
+
+2️⃣ Press the Run button.
+3️⃣ The Lexer converts the code into tokens and displays them.
+4️⃣ The Parser checks whether the code is syntactically correct.
+5️⃣ Any errors found will be displayed in the output.
